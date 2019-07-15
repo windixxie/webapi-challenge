@@ -26,13 +26,23 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] Mention two parts of Express that you learned about this week.
 
+    Express Router and custom middleware and json
+
 - [ ] Describe Middleware?
+
+    In Express Router, middleware are functions that are invoked after an initial request and the request's destination route. We use middleware to do data checking, debugging, data validation, error handling, etc. Middleware can be Global or Local. In the case of global middleware, the function is invoked on every route request while in the case of local, the middlware function(s) are invoked in the request call itself on a per call basis specific only to that call.
 
 - [ ] Describe a Resource?
 
+    A resource can be any data source in a database and addressable by API endpoints.
+
 - [ ] What can the API return to help clients know if a request was successful?
 
+    Successful API requests can return either the data requested or a success message.
+
 - [ ] How can we partition our application into sub-applications?
+
+    We can do this using Express Router and setting up seprate route handling methods.
 
 ## Project Setup
 
